@@ -11,5 +11,7 @@ Argimko/Nsis64:
 1.* Changed datafile name to setup-N.bin (originally: <exe-file-name>.N.dat)
 2.+ Added compiled files
 
-P.S. Really great solution from ywjheart!
+P.S. Really great solution from ywjheart:
+http://ywjheart.wordpress.com/2012/03/26/nsis64-special-nsis-built-with-large-file-supportbeyond-the-2gb-limit/
+
 P.P.S. It will be great to add extra parameter somthing like "datafilename", but, unfortunately, i'm not so good in c++
