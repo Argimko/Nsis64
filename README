@@ -9,7 +9,8 @@ ywjheart/Nsis64:
 
 Argimko/Nsis64:
 1.* Changed datafile name to setup-N.bin (originally: <exe-file-name>.N.dat)
-2.+ Added compiled files
+2.* Converted project to Visual Studio 2010
+3.+ Added compiled files
 
 P.S. Really great solution from ywjheart:
 http://ywjheart.wordpress.com/2012/03/26/nsis64-special-nsis-built-with-large-file-supportbeyond-the-2gb-limit/

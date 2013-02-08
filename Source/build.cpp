@@ -2860,11 +2860,11 @@ int CEXEBuild::write_output(void)
 		_tcscpy(build_output_data_filename,build_output_filename);
 		LPTSTR psz=_tcsrchr(build_output_data_filename,'\\'),psz2;
 		if (psz==NULL) psz=build_output_data_filename;
-		while (psz2=_tcschr(psz+1,'.'))
-		{
-			psz = psz2;
-		}
-		_tcscpy(psz,_T(".1.dat"));
+		// while (psz2=_tcschr(psz+1,'.'))
+		// {
+		// 	psz = psz2;
+		// }
+		_tcscpy(psz,_T("setup-1.bin"));
 		fp2 = FOPEN(build_output_data_filename,("w+b"));
 		crc2 = 0;
 		if (fp2) _fseeki64(fp2,sizeof(dataheader),SEEK_SET);// reserve room for total length & crc
@@ -2905,11 +2905,11 @@ int CEXEBuild::write_output(void)
 			  _tcscpy(build_output_data_filename,build_output_filename);
 			  LPTSTR psz=_tcsrchr(build_output_data_filename,'\\'),psz2;
 			  if (psz==NULL) psz=build_output_data_filename;
-			  while (psz2=_tcschr(psz+1,'.'))
-			  {
-				  psz = psz2;
-			  }
-			  wsprintf(psz,_T(".%u.dat"),cur_index+1);
+			  // while (psz2=_tcschr(psz+1,'.'))
+			  // {
+				//  psz = psz2;
+			  // }
+			  wsprintf(psz,_T("setup-%u.bin"),cur_index+1);
 			  fp2 = FOPEN(build_output_data_filename,("w+b"));
 			  crc2 = 0;
 			  if (fp2) _fseeki64(fp2,sizeof(dataheader),SEEK_SET);

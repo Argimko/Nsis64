@@ -366,14 +366,15 @@ const TCHAR * NSISCALL loadHeaders(int cl_flags)
 	  while(1)
 	  {
 		  CloseHandle(g_db_hFile);
-		  mystrcpy(m_data_file_path, state_exe_path);
+		  mystrcpy(m_data_file_path, state_exe_directory);
+		  mystrcat(m_data_file_path, _T("\\setup-.bin"));
 		  psz =_tcsrchr(m_data_file_path,'\\');
 		  if (psz==NULL) psz=m_data_file_path;
 		  while (psz2=_tcschr(psz+1,'.'))
 		  {
 			  psz = psz2;
 		  }
-		  wsprintf(psz,_T(".%u.dat"),cur_index);
+		  wsprintf(psz,_T("%u.bin"),cur_index);
 		  g_db_hFile = db_hFile = myOpenFile(m_data_file_path, GENERIC_READ, OPEN_EXISTING);
 		  if (db_hFile == INVALID_HANDLE_VALUE)
 		  {
@@ -455,14 +456,15 @@ const TCHAR * NSISCALL loadHeaders(int cl_flags)
 	  if (cur_index!=1)
 	  {
 		  CloseHandle(g_db_hFile);
-		  mystrcpy(m_data_file_path, state_exe_path);
+		  mystrcpy(m_data_file_path, state_exe_directory);
+		  mystrcat(m_data_file_path, _T("\\setup-.bin"));
 		  psz =_tcsrchr(m_data_file_path,'\\');
 		  if (psz==NULL) psz=m_data_file_path;
 		  while (psz2=_tcschr(psz+1,'.'))
 		  {
 			  psz = psz2;
 		  }
-		  wsprintf(psz,_T(".%u.dat"),1);
+		  wsprintf(psz,_T("%u.bin"),1);
 		  g_db_hFile = db_hFile = myOpenFile(m_data_file_path, GENERIC_READ, OPEN_EXISTING);
 	  }
 	  m_file_mapping.cur = m_file_mapping.first;// reset the current mapping to the first one
@@ -732,14 +734,16 @@ BOOL NSISCALL ReadSelfFile(LPVOID lpBuffer, DWORD nNumberOfBytesToRead)
 		  assert(m_file_mapping.cur->next);
 		  m_file_mapping.cur = m_file_mapping.cur->next;
 		  CloseHandle(g_db_hFile);
-		  mystrcpy(m_data_file_path, state_exe_path);
+		  mystrcpy(m_data_file_path, state_exe_directory);
+		  mystrcat(m_data_file_path, _T("\\setup-.bin"));
+
 		  psz =_tcsrchr(m_data_file_path,'\\');
 		  if (psz==NULL) psz=m_data_file_path;
 		  while (psz2=_tcschr(psz+1,'.'))
 		  {
 			  psz = psz2;
 		  }
-		  wsprintf(psz,_T(".%u.dat"),m_file_mapping.cur->dh.volume_index);
+		  wsprintf(psz,_T("%u.bin"),m_file_mapping.cur->dh.volume_index);
 		  g_db_hFile = myOpenFile(m_data_file_path, GENERIC_READ, OPEN_EXISTING);
 		  SetFilePointer(g_db_hFile,sizeof(dataheader),NULL,FILE_BEGIN);
 	  }
@@ -777,15 +781,16 @@ __int64 NSISCALL SetSelfFilePointer(__int64 lDistanceToMove)
 			// found it
 			LPTSTR psz,psz2;
 			CloseHandle(g_db_hFile);
-			mystrcpy(m_data_file_path, state_exe_path);
+			mystrcpy(m_data_file_path, state_exe_directory);
+			mystrcat(m_data_file_path, _T("\\setup-.bin"));
 			psz =_tcsrchr(m_data_file_path,'\\');
 			if (psz==NULL) psz=m_data_file_path;
 			while (psz2=_tcschr(psz+1,'.'))
 			{
 				psz = psz2;
 			}
-			wsprintf(psz,_T(".%u.dat"),m_file_mapping.cur->dh.volume_index);
-			g_db_hFile = myOpenFile(m_data_file_path, GENERIC_READ, OPEN_EXISTING);
+			wsprintf(psz,_T("%u.bin"),m_file_mapping.cur->dh.volume_index);
+      g_db_hFile = myOpenFile(m_data_file_path, GENERIC_READ, OPEN_EXISTING);
 
 			m_file_mapping.cur_offset = lDistanceToMove;
 			lDistanceToMove -= (m_file_mapping.cur->dh.volume_index-1)*m_file_mapping.cur->dh.length_per_volume; // convert to the local offset

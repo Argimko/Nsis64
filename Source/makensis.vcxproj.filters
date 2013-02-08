@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="7zip">
+      <UniqueIdentifier>{9b1fa927-fd9c-4d74-8eb3-1fc1b36a800d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="build.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clzma.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogTemplate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dirreader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="growbuf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="icon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lang.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lineparse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="makenssi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="manifest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugins.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceVersionInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="script.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShConstants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="strlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tokens.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="validateunicode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="winchar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="writer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="7zip\7zGuids.cpp">
+      <Filter>7zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7zip\Common\Alloc.cpp">
+      <Filter>7zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7zip\Common\CRC.cpp">
+      <Filter>7zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7zip\7zip\Common\InBuffer.cpp">
+      <Filter>7zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7zip\7zip\Compress\LZ\LZInWindow.cpp">
+      <Filter>7zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7zip\LZMADecode.c">
+      <Filter>7zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7zip\7zip\Compress\LZMA\LZMAEncoder.cpp">
+      <Filter>7zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7zip\7zip\Compress\LZ\LZOutWindow.cpp">
+      <Filter>7zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7zip\7zip\Common\OutBuffer.cpp">
+      <Filter>7zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7zip\7zip\Compress\RangeCoder\RangeCoderBit.cpp">
+      <Filter>7zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7zip\7zip\Common\StreamUtils.cpp">
+      <Filter>7zip</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="afxres.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="build.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clzma.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="compressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dirreader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fileform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="growbuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="icon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lang.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lineparse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="manifest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceVersionInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="strlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tchar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tokens.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uservars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="validateunicode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="winchar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\Common\Alloc.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZ\BinTree\BinTree.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZ\BinTree\BinTree2.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZ\BinTree\BinTree3.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZ\BinTree\BinTree3Z.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZ\BinTree\BinTree3ZMain.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZ\BinTree\BinTree4.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZ\BinTree\BinTree4b.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZ\BinTree\BinTreeMain.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZ\BinTree\BinTreeMF.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZ\BinTree\BinTreeMFMain.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\Common\CRC.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\Common\Defs.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZ\IMatchFinder.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Common\InBuffer.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZ\LZInWindow.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZMA\LZMA.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\LZMADecode.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZMA\LZMAEncoder.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZ\LZOutWindow.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\Common\MyCom.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\Common\MyGuidDef.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\Common\MyUnknown.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\Common\MyWindows.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Common\OutBuffer.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\RangeCoder\RangeCoder.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\RangeCoder\RangeCoderBit.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\RangeCoder\RangeCoderBitTree.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\RangeCoder\RangeCoderOpt.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\Common\StdAfx.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\RangeCoder\StdAfx.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Common\StdAfx.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZMA\StdAfx.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Compress\LZ\StdAfx.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\7zip\Common\StreamUtils.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7zip\Common\Types.h">
+      <Filter>7zip</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
